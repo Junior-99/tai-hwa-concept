@@ -1,0 +1,1 @@
+import {resolve} from 'node:path';export default {base:'./',build:{rollupOptions:{input:Object.fromEntries(["index","bowl","heritage","archive","visit","plan","dashboard"].map(p=>[p,resolve(import.meta.dirname,p+'.html')]))}}};
